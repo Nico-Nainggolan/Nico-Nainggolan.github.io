@@ -4,28 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bang Nenggol</title>
-     <!-- Atau untuk ikon .png -->
-     <link rel="icon" href="img/nico.png" type="image/png">
+    <link rel="icon" href="img/nico.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
-    <!-- bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
-
-    <!-- Aos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet" />
+
+    <!-- Awesome Icon Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slides mobile css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="script.js" defer></script>
   </head>
   <body id="Home">
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-75 shadow-sm fixed-top">
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Navbar ===================================================== -->
+    <!-- ========================================================================================================== -->
+    <nav class="navbar navbar-expand-lg bg-opacity-75 shadow-sm fixed-top" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
       <div class="container">
-        <a class="navbar-brand" href="#">Nico Nainggolan</a>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/nico.png" alt="Nico Nainggolan" class="rounded-circle me-2" width="40" height="40" />
+          Nico Stypanus Nainggolan
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-menu-button-wide-fill"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -34,6 +50,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -45,161 +67,686 @@
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Jumbroton -->
-    <section class="jumbotron text-center">
-      <img src="img/WhatsApp Image 2024-05-30 at 00.39.40_7f5bc7ef.jpg" alt="Nico Stypanus Nainggolan " width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">Siswa | Pelajar</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L34.3,117.3C68.6,139,137,181,206,218.7C274.3,256,343,288,411,256C480,224,549,128,617,90.7C685.7,53,754,75,823,112C891.4,149,960,203,1029,197.3C1097.1,192,1166,128,1234,96C1302.9,64,1371,64,1406,64L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-    </section>
-    <!-- Akhir Jumbroton -->
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Jumbotron ================================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="jumbotron">
+      <div class="container d-flex align-items-center">
+        <img src="img/WhatsApp Image 2024-05-30 at 00.39.40_7f5bc7ef.jpg" alt="Nico Stypanus Nainggolan" width="400" class="rounded-circle img-thumbnail" data-aos="flip-down" data-aos-duration="3000" data-aos-delay="2000" />
+        <div class="text-content">
+          <h1 class="display-4" data-aos="fade-right" data-aos-duration="4000" data-aos-delay="3000"><span id="typing-text"></span><span class="cursor">&nbsp;</span></h1>
+          <p class="lead" data-aos="flip-up" data-aos-duration="3000" data-aos-delay="3000">Umur Boleh Tua tetapi <br />Waktu Terus <span>Muda!</span></p>
+          <a href="https://wa.me/6283147417518?text=Halo,%20Terima%20Kasih%20Telah%20Mengunjungi%20Web%20Saya." class="btn btn-contact" target="_blank">
+            <i class="bi bi-telephone-fill" data-aos="flip-down" data-aos-duration="2000"></i> Hubungi saya
+          </a>
 
-    <!-- about -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Aboute Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-7 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>Hello Semua, Ini adalah website pertama saya yang berbentuk PORTFOLIO,yang dibimbing oleh Bang Sandhika Galih </p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left"data-aos-duration="1000" data-aos-delay="200">
-            <p>Saya Adalah Seorang Pelajar/Siswa Duduk di kelas X, Sekolah Saya Di SMK BINTANG TIMUR Pematangsiantar Saya mengambil
-              jurusan Rekayasa Perangkat Lunak, Saya Berumur 16 Tahun lahir di Indonesia Sumatra utara Pematang Siantar
-            </p>
+          <a href="#contact" class="btn btn-email"><i class="bi bi-envelope" data-aos="flip-down" data-aos-duration="2000"></i> nicoF4c@gmail.com</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nic_nggln/" target="_blank" class="hvr-grow"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/chelonx-company-485359292/" target="_blank" class="hvr-grow"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/r.bronson.5?locale=id_ID" target="_blank" class="hvr-grow"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8bb3f2" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,96C384,128,480,224,576,245.3C672,267,768,213,864,197.3C960,181,1056,203,1152,181.3C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <!-- scroll down -->
+      <div class="scroll-down text-center">
+        <a href="#about" class="btn" data-aos="fade-down" data-aos-duration="2000"> Scroll Down <i class="bi bi-arrow-down"></i> </a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,117.3C68.6,139,137,181,206,218.7C274.3,256,343,288,411,256C480,224,549,128,617,90.7C685.7,53,754,75,823,112C891.4,149,960,203,1029,197.3C1097.1,192,1166,128,1234,96C1302.9,64,1371,64,1406,64L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <!-- Akhir About -->
 
-    <!-- project -->
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= About ====================================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="about" id="about">
+      <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">About <span>Me</span></h2>
+      <h2 class="subheading" data-aos="fade-up" data-aos-duration="2000">Introduce My Self</h2>
+      <div class="about-img">
+        <img src="img/gambar1.jpg" data-aos="flip-up" data-aos-duration="2000" />
+        <span class="circle-spin"></span>
+      </div>
+      <div class="about-content">
+        <h3 data-aos="fade-down" data-aos-duration="2000">Web Designer</h3>
+        <p data-aos="fade-right" data-aos-duration="2000">
+          Halo saya Nico Stypanus Nainggolan, umur saya 17 Tahun saya anak ke 2 dan satu - satunya laki - laki dari 3 bersaudara. Saya Sekolah di
+          <a class="alamat" href="https://maps.app.goo.gl/b6HeXBrYoQYFfaAVA" target="_blank">SMK Swasta RK Bintang Timur Pematang Siantar</a> jurusan Rekayasa Perangkat Lunak kelas XII. Saya sangat menyukai mendesain, seperti mendesain
+          spanduk, logo, flayer, poster dan banyak lagi. Software yang paling sering saya pakai Photoshop, Canva, CorelDraw. Saya juga minat dalam dalam hal editing video menggunakan software capcut.
+        </p>
+
+        <div class="btn-box btns">
+          <a href="./img/Nico CV.pdf" download target="_blank" class="btna" data-aos="flip-up" data-aos-duration="2000">download cv <i class="bi bi-download"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Education ================================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="education" id="education">
+      <h1 data-aos="fade-right" data-aos-duration="2000">Education</h1>
+      <hr class="custom-hr" />
+      <div class="timeline">
+        <div class="containers right-container">
+          <img src="img/education/Sekolah Dasaar.png" />
+          <div class="text-box" data-aos="fade-left" data-aos-duration="2000">
+            <h2>SD Swasta HKI No 1</h2>
+            <small>2014 - 2020</small>
+            <p>Saya Memulai Pendidikan Dasar di SD Swasta HKI No 1 Pematangsiantar, saya mendapatkan banyak pelajaran meskipun jumlah murid bisa dibilang sedikit, tetapi itu tidak membuat khawatir akan pendidikan disitu.</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class="containers left-container">
+          <img src="img/education/Sekolah Pertama.png" />
+          <div class="text-box" class="text-box" data-aos="fade-right" data-aos-duration="2000">
+            <h2>SMP Neg 8 Pematangsiantar</h2>
+            <small>2020 - 2022</small>
+            <p>Saya Melanjutkan Pendidikan saya di SMP Neg 8 Pematangsiantar, disini saya bertemu dengan beragam agama dan budaya. Saya mulai mengenal betapa pentingnya itu toleransi dikehidupan kita.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class="containers right-container">
+          <img src="img/education/smk.png" />
+          <div class="text-box" class="text-box" data-aos="fade-left" data-aos-duration="2000">
+            <h2>SMK Swasta RK Bintang Timur Pematangsiantar</h2>
+            <small>2022 - 2025</small>
+            <p>Saya Melanjutkan Pendidikan saya ke SMK Swasta RK Bintang Timur Pematangsiantar. Saya memilih jurusan Rekayasa Perangkat Lunak karena saya sangat menyukai hal-hal mengenai teknologi modern.</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Galleri ==================================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="gallery" id="gallery">
+      <input type="radio" name="Photos" id="check1" checked />
+      <input type="radio" name="Photos" id="check2" />
+      <input type="radio" name="Photos" id="check3" />
+      <input type="radio" name="Photos" id="check4" />
+
+      <div class="containe">
+        <h1 data-aos="fade-down" data-aos-duration="2000">PHOTO <span>GALLERY</span></h1>
+        <div class="top-content">
+          <h4>Gallery Nico</h4>
+          <div class="menu-icon" onclick="toggleMenu()" aria-label="Menu">&#9776;</div>
+          <div class="menu">
+            <label for="check1" onclick="closeMenu()">All Photos</label>
+            <label for="check2" onclick="closeMenu()">Family Photos</label>
+            <label for="check3" onclick="closeMenu()">Body Photos</label>
+            <label for="check4" onclick="closeMenu()">Friends & School Photos</label>
+          </div>
+        </div>
+        <div class="photo-gallery">
+          <!-- Friends 7 School -->
+          <div class="photo-item place">
+            <img src="img/galeri/DSC08115.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri1.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri13.jpg" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri15.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri4.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri5.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri6.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri7.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri8.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri9.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri11.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri2.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri3.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri14.JPG" alt="Place Photo" />
+          </div>
+          <div class="photo-item place">
+            <img src="img/galeri/fri12.JPG" alt="Place Photo" />
+          </div>
+
+          <!-- familly -->
+          <div class="photo-item family">
+            <img src="img/galeri/kel1.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/kel2.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/kel3.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/kel4.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa1.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa2.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa3.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa4.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa5.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa6.jpg" alt="Family Photo" />
+          </div>
+          <div class="photo-item family">
+            <img src="img/galeri/fa7.jpg" alt="Family Photo" />
+          </div>
+
+          <!-- Body -->
+          <div class="photo-item child">
+            <img src="img/galeri/body1.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body2.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body3.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body4.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body6.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body7.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body3.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body8.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/body9.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/abod1.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/abod2.jpg" alt="Child Photo" />
+          </div>
+          <div class="photo-item child">
+            <img src="img/galeri/abod4.jpg" alt="Child Photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Project ==================================================== -->
+    <!-- ========================================================================================================== -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>My Project</h2>
+            <h2 data-aos="fade-down" data-aos-duration="2000">Karya Project Desain</h2>
+            <div class="filter-controls" data-aos="fade-down" data-aos-duration="2000">
+              <button class="filter-btn" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="kelompok1">1</button>
+              <button class="filter-btn" data-filter="kelompok2">2</button>
+              <button class="filter-btn" data-filter="kelompok3">3</button>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" >
-              <img src="img/project/H2 PROJEK.jpg" class="card-img-top" alt="project 2" />
-              <div class="card-body">
-                <p class="card-text">Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Kendaraan" Mata pelajaran Dasar desain Grafis</p>
-              </div>
+        <div class="card-container" data-aos="fade-down" data-aos-duration="2000">
+          <!-- Kel1 -->
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/compressed_pizza poster.jpg" alt="Project 3" class="card-img-top" />
+            <div class="card-content">
+              <h3>Poster Makanan</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Sebuah Makanan" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_pizza poster.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100" >
-              <img src="img/project/RPL 2 NEW.jpg" class="card-img-top" alt="project 2" />
-              <div class="card-body">
-                <p class="card-text">Ini adalah hasil dari project saya di SMK yang bertema "Mainan Kunci"  Mata pelajaran Dasar desain Grafis</p>
-              </div>
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/compressed_H2 PROJEK.jpg" alt="Project 1" class="card-img-top" data-toggle="modal" data-target="#imageModal" />
+            <div class="card-content">
+              <h3>Poster Kendaraan</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Kendaraan" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_H2 PROJEK.jpg" data-toggle="modal" data-target="#imageModal">Lihat Detail <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card"data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-              <img src="img/project/pizza poster.jpg" class="card-img-top" alt="project 2" />
-              <div class="card-body">
-                <p class="card-text">Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Sebuah Makanan" Mata pelajaran Dasar desain Grafis</p>
-              </div>
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/twibon.jpg" alt="Project 5" class="card-img-top" />
+            <div class="card-content">
+              <h3>Desain Twibbon</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Kendaraan" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/twibon.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/compressed_RPL 1.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>Gantungan Kunci</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "Mainan Kunci" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_RPL 1.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/compressed_SERTIFIKAT NICO  NAINGGOLAN.jpg" alt="Project 4" class="card-img-top" />
+            <div class="card-content">
+              <h3>Desain Sertifikat</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Kendaraan" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_SERTIFIKAT NICO  NAINGGOLAN.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok1">
+            <img src="img/project/compressed_Halaman Awal.png" alt="Project 6" class="card-img-top" />
+            <div class="card-content">
+              <h3>Project Web Sekolah</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Kendaraan" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_Halaman Awal.png">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Kel2 -->
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/compressed_Browsur A3 New.jpg" alt="Project 5" class="card-img-top" />
+            <div class="card-content">
+              <h3>Desain Brosur</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Desain Brosur" Untuk brosur sekolah, universitas dan lain-lain</p>
+              <a href="#" class="btn" data-image="img/project/compressed_Browsur A3 New.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/compressed_ID CARD.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>ID Card</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "ID Card" Untuk Kepanitiaan</p>
+              <a href="#" class="btn" data-image="img/project/compressed_ID CARD.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/compressed_MANIPULASI 2 NICO.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>Manipulation Design</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "Manipulation" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_MANIPULASI 2 NICO.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/buku lagu_11zon.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>Desain Cover Buku Lagu</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "Buku Lagu" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/buku lagu_11zon.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/compressed_KEMANASN ODOL.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>Desain Kemasan Odol</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "Produk Jual" Mata pelajaran Dasar desain Grafis</p>
+              <a href="#" class="btn" data-image="img/project/compressed_KEMANASN ODOL.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-category="kelompok2">
+            <img src="img/project/compressed_Revisi Poster Nico.jpg" alt="Project 2" class="card-img-top" />
+            <div class="card-content">
+              <h3>Poster Acara</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema "Poster" Cocok Untuk Seminar mahasiiswa atau event-event lainnya</p>
+              <a href="#" class="btn" data-image="img/project/compressed_Revisi Poster Nico.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Kel3 -->
+          <div class="card" data-category="kelompok3">
+            <img src="img/project/compressed_A3 BROSUR.jpg" alt="Project 4" class="card-img-top" />
+            <div class="card-content">
+              <h3>Brosur Sekolah</h3>
+              <p>Ini adalah hasil dari project saya di SMK yang bertema Poster "Mempromosikan Sekolah" mengajak kita masuk dan berpartisipasi di dalam sekolah</p>
+              <a href="#" class="btn" data-image="img/project/compressed_A3 BROSUR.jpg">Lihat Detail <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L30,149.3C60,139,120,117,180,128C240,139,300,181,360,213.3C420,245,480,267,540,272C600,277,660,267,720,224C780,181,840,107,900,101.3C960,96,1020,160,1080,170.7C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
     </section>
-    <!-- Akhir project -->
 
-    <!-- CONTACT -->  
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Contact ==================================================== -->
+    <!-- ========================================================================================================== -->
     <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <h2>Contact Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terima kasih! </strong>Pesan anda sudah Nico terima.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <form name="nico-contact-form">
-            <div class="mb-3">
-              <label for="Name" class="form-label">Nama lengkap</label>
-              <input type="name" class="form-control" id="name" aria-describedby="name" name="nama" />
+      <div class="contain">
+        <h2 class="judcon" data-aos="fade-down" data-aos-duration="2000">Contact <span>Us</span></h2>
+        <main class="row">
+          <!-- *********** Left Section Column Starts ********  -->
+          <section class="col left">
+            <!-- *********** Title  ********  -->
+            <div class="contactTittle" data-aos="fade-right" data-aos-duration="2000">
+              <h2>Get In Touch</h2>
+              <p>Setiap pesanmu adalah alasan ku untuk tersenyum lebih lebar. Hubungi saya, yuk!</p>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email </label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+            <!-- ***********  Contact Info Starts ********  -->
+            <div class="contactInfo" data-aos="fade-down" data-aos-duration="2000">
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="details">
+                  <span>Phone</span>
+                  <span>08324243423</span>
+                </div>
+              </div>
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="details">
+                  <span>Email</span>
+                  <span>nicof4c@gmail.com</span>
+                </div>
+              </div>
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="details">
+                  <span>Lokasi</span>
+                  <span>Pematangsiantar, Jalan Mangga, Indonesia</span>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">Pesan</label>
-              <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
 
-            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </form>
+            <!-- ***** Social Media Starts -->
+            <div class="socialMedia" data-aos="fade-right" data-aos-duration="2000">
+              <a href="https://www.facebook.com/r.bronson.5?locale=id_ID"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/nic_nggln/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/chelonx-company-485359292/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </section>
+          <!-- *********** Right Section Column Starts ********  -->
+          <section class="col right" data-aos="fade-left" data-aos-duration="2000">
+            <form action="https://api.web3forms.com/submit" method="POST" class="messageForm">
+              <input type="hidden" name="access_key" value="ef2ccb21-b3a8-4c24-bcd0-73642a883083" />
+              <div class="inputGroup halfWidth">
+                <label for="Name" class="form-label">Nama lengkap</label>
+                <input type="name" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="inputGroup halfWidth">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="inputGroup halfWidth">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </section>
+        </main>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
+        <path
+          fill="rgba(10, 94, 80, 0.884)"
+          fill-opacity="100"
+          d="M0,128L26.7,144C53.3,160,107,192,160,213.3C213.3,235,267,245,320,213.3C373.3,181,427,107,480,85.3C533.3,64,587,96,640,133.3C693.3,171,747,213,800,197.3C853.3,181,907,107,960,96C1013.3,85,1067,139,1120,181.3C1173.3,224,1227,256,1280,245.3C1333.3,235,1387,181,1413,154.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Modal ====================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="" alt="Modal Image" id="modalImage" />
+          </div>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,213.3C213.3,235,267,245,320,213.3C373.3,181,427,107,480,85.3C533.3,64,587,96,640,133.3C693.3,171,747,213,800,197.3C853.3,181,907,107,960,96C1013.3,85,1067,139,1120,181.3C1173.3,224,1227,256,1280,245.3C1333.3,235,1387,181,1413,154.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </section>
-    <!-- AKHIR CONTACT -->
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-      <p>Subscribe to my Channel <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.youtube.com/channel/UCpIzXcMnwu132WmLXyuq87Q" class="text-white fw-bold">Go lock</a></p>
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= Footer ===================================================== -->
+    <!-- ========================================================================================================== -->
+    <footer>
+      <div class="footer-content">
+        <h3>Nico Stypanus Nainggolan</h3>
+        <p>"Seperti tanaman yang menyerap cahaya matahari, jadilah sumber energi positif dalam kehidupan orang lain."</p>
+
+        <ul class="menuk">
+          <li><a href="#home">Home</a><span class="motivation">Tempat Nyaman Kita</span></li>
+          <li><a href="#about">About</a><span class="motivation">Lihat, Siapa Kamu?</span></li>
+          <li><a href="#education">Education</a><span class="motivation">Perjalanan Hidup</span></li>
+          <li><a href="#gallery">Gallery</a><span class="motivation">Kenangan Indah</span></li>
+          <li><a href="#projects">Project</a><span class="motivation">Bentuk dan Tingkatkan</span></li>
+          <li><a href="#contact">Contact</a><span class="motivation">Kangen? Hubungi Saya</span></li>
+        </ul>
+
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.me/6283147417518?text=Halo,%20Terima%20Kasih%20Telah%20Mengunjungi%20Web%20Saya."><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2024 codeOpacity. designed by <span>Nico Nainggolan</span></p>
+      </div>
     </footer>
-    
-    <!-- Akhir Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <!-- ========================================================================================================== -->
+    <!-- ============================================= SCRIPT ===================================================== -->
+    <!-- ========================================================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init({
-        once :true,
+        once: true,
+      });
+    </script>
+
+    <!-- Untuk Navbar -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navbarNav = document.getElementById("navbarNav");
+        var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        var navbarToggler = document.querySelector(".navbar-toggler");
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (window.getComputedStyle(navbarToggler).display !== "none") {
+              navbarNav.classList.remove("show");
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- Untuk Grid -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const modalImage = document.getElementById("modalImage");
+
+        const showModal = (src) => {
+          modalImage.src = src;
+          const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
+          imageModal.show();
+        };
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            cards.forEach((card) => {
+              if (filter === "all" || card.getAttribute("data-category") === filter) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+
+        cards.forEach((card) => {
+          const img = card.querySelector("img");
+          const btn = card.querySelector(".btn");
+
+          img.addEventListener("click", () => showModal(img.src));
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            showModal(btn.getAttribute("data-image"));
+          });
+        });
+
+        // Initialize Slick slider for mobile view
+        if (window.innerWidth <= 768) {
+          $(".card-container").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          });
+        }
+
+        // Re-initialize Slick slider on window resize for responsive behavior
+        window.addEventListener("resize", () => {
+          if (window.innerWidth <= 768 && !$(".card-container").hasClass("slick-initialized")) {
+            $(".card-container").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            });
+          } else if (window.innerWidth > 768 && $(".card-container").hasClass("slick-initialized")) {
+            $(".card-container").slick("unslick");
+          }
+        });
+      });
+    </script>
+
+    <!--============================================ Share To spreedsheet ========================================-->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyguS_1K7zjD_LDOwAarAgjZm1DCfP8YWVl7VVjW6Nb7IVKoKdUUH_S7a01MYJqVnFwyw/exec";
+      const form = document.forms["nico-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!--================================================ Typing text  ===========================================-->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const texts = ["Hay Semuanya", "Nama saya", "Nico Stypanus Nainggolan"];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type() {
+          if (count === texts.length) {
+            count = 0;
+          }
+          currentText = texts[count];
+          letter = currentText.slice(0, ++index);
+
+          document.getElementById("typing-text").textContent = letter;
+          if (letter.length === currentText.length) {
+            count++;
+            index = 0;
+            setTimeout(type, 2000); // wait 2 seconds before starting next word
+          } else {
+            setTimeout(type, 200); // typing speed
+          }
+        })();
+      });
+    </script>
+
+    <!-- untuk galery -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("active");
+      }
+
+      function closeMenu() {
+        document.querySelector(".menu").classList.remove("active");
+      }
+
+      // Close the menu if the user clicks outside of it
+      document.addEventListener("click", function (event) {
+        const menu = document.querySelector(".menu");
+        const menuIcon = document.querySelector(".menu-icon");
+        if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+          closeMenu();
+        }
       });
     </script>
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyguS_1K7zjD_LDOwAarAgjZm1DCfP8YWVl7VVjW6Nb7IVKoKdUUH_S7a01MYJqVnFwyw/exec'
-      const form = document.forms['nico-contact-form']
-      const btnKirim = document.querySelector('.btn-kirim')
-      const btnLoading = document.querySelector('.btn-loading')
-      const myAlert = document.querySelector('.my-alert')
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-      // ketika tombol submit diklik
-      // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none')
-        btnKirim.classList.toggle('d-none')
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-             
-      // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none')
-            btnKirim.classList.toggle('d-none')
-            // tampilkan alert
-            myAlert.classList.toggle('d-none')
-            // reset formnya
-            form.reset()
-            console.log('Success!', response)
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
+      window.onload = function () {
+        window.scrollTo(0, 0); // Atur posisi scroll ke atas saat halaman dimuat ulang
+      };
     </script>
   </body>
 </html>

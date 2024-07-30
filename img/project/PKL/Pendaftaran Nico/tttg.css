@@ -1,0 +1,140 @@
+body {
+  justify-content: center;
+  align-items: center;
+  background: url(IMG/ornamental-seamless-pattern_1442-28482.jpg);
+  background-position: center;
+}
+
+.isi {
+  margin-top: 130px;
+}
+
+.isi h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  background: none;
+  transition: 3s;
+}
+
+.container:hover {
+  padding-top: 20px;
+  color: white;
+  margin: 40px;
+  border-radius: 30px;
+  background-color: rgb(2, 4, 76);
+  padding-bottom: 40px;
+}
+
+.container.hovered {
+  padding-top: 20px;
+  margin: 40px;
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(2, 4, 76);
+  padding-bottom: 40px;
+}
+
+.container img {
+  position: absolute;
+  margin-top: -180px;
+  width: auto;
+  height: 165px;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+
+.des1 {
+  text-indent: 1.5cm;
+  margin-left: 350px;
+}
+
+.kepsek h1 {
+  text-align: center;
+}
+
+.kepsek {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.kepsek table {
+  margin-left: 40px;
+  border-collapse: collapse;
+}
+
+.kepsek td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.td1 {
+  width: 900px;
+  background-color: rgba(104, 147, 255, 0.3);
+  color: rgb(0, 0, 0);
+  border-radius: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.kepsek img {
+  width: auto;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.kepsek h2 {
+  margin-top: 0;
+}
+
+.kepsek p {
+  margin-bottom: 0;
+}
+
+/* jurusan */
+
+.jurusan-section p {
+  padding-top: 15px;
+}
+
+.jurusan-list {
+  margin-top: 40px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+/* Tambahkan CSS berikut */
+.jurusan {
+  background: #dcd9d9;
+  margin-top: 100px;
+}
+
+.jurusan h2 {
+  padding-top: 40px;
+  text-align: center;
+}
+.jurusan-item {
+  text-align: center;
+  margin-bottom: 40px; /* Menambahkan jarak antara gambar */
+}
+
+.jurusan-item img {
+  width: auto; /* Mengatur ukuran gambar menjadi sedang */
+  height: 165px;
+  display: block; /* Mengatur gambar agar dapat diatur posisinya */
+  margin: 0 auto; /* Menempatkan gambar di tengah */
+  border-radius: 20px;
+}
+
+.jurusan-item h3 {
+  margin-top: 20px;
+}
+
+.jurusan-item p {
+  color: #666;
+}

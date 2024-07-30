@@ -1,0 +1,125 @@
+:root {
+  --Blue: rgb(12, 158, 248);
+  --shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: url(IMG/SMMK.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contact */
+.contact {
+  padding: 8rem 7% 1.4rem;
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10; /* Mengatur warna hitam dengan opasitas 50% */
+  border-radius: 20px;
+  margin-left: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-right: 4rem;
+  margin-bottom: 3rem;
+}
+
+.contact h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: var(--shadow);
+}
+
+.contact h2 span {
+  color: rgb(255, 255, 255);
+  text-shadow: var(--shadow);
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #2222;
+  backdrop-filter: blur(5px);
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: 2rem;
+  background-color: #2222;
+  border: 1px solid #eeee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group:hover {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: 2rem;
+  box-shadow: 4px 4px 12px rgba(160, 160, 160, 0.5);
+  border: 1px solid #eeee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group i {
+  font-size: 2rem;
+  color: #ffffffee;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fffbfb;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(37, 115, 240);
+  cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #000000;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+/* AKHIR CONTACT */

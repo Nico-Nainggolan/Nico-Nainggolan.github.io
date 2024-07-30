@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <link rel="icon" href="img/Copy of SMK.png" type="image/png" />
+    <!-- Goggle Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="daftar.css" />
+    <link rel="stylesheet" href="kontak.css" />
+    <!-- Akhir Goggle Font -->
+  </head>
+  <body>
+    <header class="header">
+      <a href="form_siswa.html"><img src="IMG/Copy of SMK.png" alt="" /></a>
+      <h2>SMK RK Bintang Timur <br />PematangSiantar</h2>
+      <nav class="navbar">
+        <a href="Tentang.html">Tentang</a>
+        <a href="Fasilitas.html">Fasilitas</a>
+        <a href="galeri.html">Gallery</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="kontak.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Section Contact -->
+    <section class="contact">
+      <h2><span>Hubungi </span> Kami</h2>
+      <p>Lihat informasi lokasi dan <br />Hubungi saya kapan anda mau ketika mengunjungi web saya, saya usahakan terjawab 100% lebih cepat dari kecepatan cahaya</p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15938.2354902791!2d99.0735923!3d2.9422452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303185a8ebbf855d%3A0x8b59c4d40c0a71d0!2sSMK%20BINTANG%20TIMUR!5e0!3m2!1sid!2sid!4v1710741378441!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form name="daftar-contact-form">
+          <div class="input-group">
+            <i class="bi bi-person"></i>
+            <input name="name" type="text" placeholder="nama" required />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-envelope"></i>
+            <input name="Email" type="email" placeholder="email" required />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-telephone"></i>
+            <input type="text" placeholder="pesan" name="Pesan" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Akhir Contact-->
+
+    <!-- Foother -->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>SMK Swasta Rk Bintang Timur PematangSiantar</h3>
+          <p>Sekolah nyaman enak dan friendly</p>
+          <p>Bergabung dan Daftar ke Sekolah Kami</p>
+        </div>
+        <div class="footer__col">
+          <h4>Perusahaan</h4>
+          <p>Tentang</p>
+          <p>Fasilitas</p>
+          <p>Gallery</p>
+          <p>Pendaftaran</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Kepoin Kuy</h4>
+          <p>Q&A</p>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__bar">By Nico</div>
+    </footer>
+    <!-- akhir foter -->
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbz8yMQVrvnl20EOFKbyXg6R-yX1RN_KS5kle8LjMs74TsRcKWhxJnL0rByP1o9Ki16B7g/exec";
+      const form = document.forms["daftar-contact-form"];
+      const submitButton = form.querySelector(".btn");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        submitButton.innerText = "Loading...";
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            submitButton.innerText = "Kirim Pesan";
+            showAlert("Pesan anda telah terkirim");
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            submitButton.innerText = "Kirim Pesan";
+          });
+      });
+
+      function showAlert(message) {
+        const alertDiv = document.createElement("div");
+        alertDiv.className = "alert";
+        alertDiv.textContent = message;
+
+        form.insertBefore(alertDiv, submitButton);
+
+        setTimeout(() => {
+          alertDiv.remove();
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

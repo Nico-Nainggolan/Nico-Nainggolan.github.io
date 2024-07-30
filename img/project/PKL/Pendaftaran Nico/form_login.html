@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="mylog.css" />
+    <link rel="icon" href="img/Copy of SMK.png" type="image/png">
+    <!--My CSS-->
+    <!-- Goggle Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet" />
+    <!-- Akhir Goggle Font -->
+  </head>
+  <body>
+    <!-- tampilan awal -->
+    <div class="overlay"></div>
+    <div class="isi">
+      <!-- Logo Sekolah -->
+      <img src="IMG/Copy of SMK.png" alt="Logo Sekolah" class="logo" />
+      <img src="IMG/476px-Logo_kota_pematangsiantar.png" alt="Second Logo" class="logo2" />
+      <!-- Akhir Logo Sekolah -->
+      <p>Selamat Datang Di</p>
+      <h1>SMK Swasta RK Bintang Timur Pematangsiantar</h1>
+      <div class="isip">
+        <p>Silahkan Mendaftar dan Bergabung di <br /><b>"SMK Swasta RK Bintang Timur Pematangsiantar"</b><br />SMK Bisa, SMK Hebat</p>
+      </div>
+    </div>
+    <button class="btnLogin-popup">Login</button>
+    <!-- akhirnya -->
+
+    <!-- tampilan FORM LOGIN -->
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+      <!-- Untuk Icon Close-->
+
+      <!-- Form Login -->
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="form_siswa.html">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="renember-forgot">
+            <label><input type="checkbox" />Renember Me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Tidak Memiliki Akun? <a href="#" class="register-link">Register</a></p>
+          </div>
+        </form>
+      </div>  
+      <!-- Akhir Form Login -->
+      <!-- Form Register -->
+      <div class="form-box Register">
+        <h2>Registration</h2>
+        <form action="form_siswa.html">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="renember-forgot">
+            <label><input type="checkbox" />I Agree to the terms & conditions</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Akhir Form Register -->
+
+    <script src="script.js"></script>
+    <!--Untuk Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Akhir Icon -->
+  </body>
+</html>

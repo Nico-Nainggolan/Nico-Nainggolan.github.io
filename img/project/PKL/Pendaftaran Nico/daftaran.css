@@ -1,0 +1,102 @@
+body {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: url(IMG/SMMK.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.container {
+  margin: 150px auto 50px auto; /* 250px dari atas, 50px dari bawah, dan di tengah secara horizontal */
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 2s;
+  color: #151515;
+  background-color: #9c9d9e;
+}
+
+#display-data {
+  margin-top: 20px;
+}
+
+.radio-group {
+  display: inline-block;
+}
+
+.radio-inline {
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  margin-right: 90px; /* Untuk memberikan jarak antara elemen radio */
+}
+
+.fasi-group {
+  display: inline-block;
+}
+
+.fas {
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+.fasi-inline {
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px; /* Untuk memberikan jarak antara elemen radio */
+}
+
+.fasi-inlines {
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  margin-right: 40px;
+  margin-bottom: 30px; /* Untuk memberikan jarak antara elemen radio */
+}

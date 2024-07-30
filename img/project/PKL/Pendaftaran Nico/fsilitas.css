@@ -1,0 +1,46 @@
+.fasilitas-section {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background: url(IMG/ornamental-seamless-pattern_1442-28482.jpg);
+  background-position: center;
+}
+
+.fasilitas-section p {
+  padding-top: 15px;
+}
+
+.fasilitas-list {
+  margin-top: 40px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+/* Tambahkan CSS berikut */
+.fasilitas-item {
+  text-align: center;
+  margin-bottom: 40px; /* Menambahkan jarak antara gambar */
+}
+
+.fasilitas-item img {
+  width: auto; /* Mengatur ukuran gambar menjadi sedang */
+  height: 165px;
+  display: block; /* Mengatur gambar agar dapat diatur posisinya */
+  margin: 0 auto; /* Menempatkan gambar di tengah */
+  border-radius: 20px;
+}
+
+.fasilitas-item h3 {
+  margin-top: 20px;
+}
+
+.fasilitas-item p {
+  color: #666;
+}
