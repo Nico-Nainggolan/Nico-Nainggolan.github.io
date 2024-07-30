@@ -340,6 +340,96 @@ section {
 }
 
 /* =====================================================Responsive Media Query======================================= */
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 0; /* Mengurangi padding navbar */
+  }
+
+  .navbar-brand {
+    font-size: 1rem; /* Menyesuaikan ukuran font brand */
+  }
+
+  .navbar-brand img {
+    width: 30px; /* Mengurangi ukuran logo */
+    height: 30px;
+  }
+
+  .navbar-toggler {
+    font-size: 1.2rem; /* Mengurangi ukuran ikon toggle */
+    color: #fff; /* Warna ikon toggle */
+  }
+
+  .navbar-toggler:focus {
+    outline: none; /* Menghapus outline saat fokus */
+    box-shadow: none; /* Menghapus shadow saat fokus */
+  }
+
+  .navbar .nav-link {
+    font-size: 0.9rem; /* Menyesuaikan ukuran font link navigasi */
+    padding: 0.5rem 0; /* Menyesuaikan padding link */
+  }
+
+  .navbar .nav-link.active {
+    color: #ffbb00; /* Menyesuaikan warna link aktif */
+  }
+
+  .navbar .nav-link:hover {
+    color: #ffbb00; /* Menyesuaikan warna link saat hover */
+  }
+
+  .navbar-collapse {
+    background-color: rgba(10, 94, 80, 0.884); /* Menyesuaikan warna latar belakang menu */
+  }
+
+  .navbar-collapse .navbar-nav {
+    margin-top: 1rem; /* Menyesuaikan jarak atas item menu */
+  }
+
+  .navbar-collapse .nav-item {
+    margin-bottom: 0.5rem; /* Menyesuaikan jarak bawah item menu */
+  }
+  /* Jumbotron */
+  .jumbotron {
+    padding-top: 100px; /* Mengurangi padding atas */
+    background: #e8eae1;
+  }
+
+  .jumbotron .container {
+    margin-left: 10px; /* Mengurangi margin kiri */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumbotron .text-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #typing-text {
+    font-size: 24px; /* Menyesuaikan ukuran font teks */
+  }
+
+  .lead {
+    font-size: 14px; /* Menyesuaikan ukuran font teks */
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Menyesuaikan ukuran ikon sosial */
+  }
+
+  .scroll-down .btn {
+    font-size: 12px; /* Menyesuaikan ukuran font tombol scroll */
+  }
+
+  .jumbotron img {
+    max-width: 80%; /* Mengatur lebar maksimum gambar */
+    margin-bottom: -20px;
+    height: auto;
+    max-height: 200px; /* Menyesuaikan tinggi gambar */
+  }
+}
+
 @media (max-width: 768px) {
   .jumbotron .container {
     margin-left: 20px;
@@ -769,6 +859,65 @@ section {
     margin: 55px;
     margin-bottom: -50px;
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Timeline */
+  .timeline {
+    margin: 30px auto; /* Menyesuaikan margin untuk tampilan kecil */
+  }
+
+  .timeline::after {
+    left: 25px; /* Menyesuaikan posisi garis vertikal timeline */
+  }
+
+  .containers {
+    width: 100%;
+    padding-left: 20px; /* Mengurangi padding kiri */
+    padding-right: 20px; /* Mengurangi padding kanan */
+  }
+
+  .text-box {
+    font-size: 12px; /* Menyesuaikan ukuran font */
+  }
+
+  .text-box small {
+    margin-bottom: 5px; /* Mengurangi jarak bawah elemen small */
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img,
+  .right-container img {
+    left: 5px; /* Mengurangi jarak gambar dari tepi kiri */
+  }
+
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 10px solid rgba(10, 94, 80, 1); /* Menyesuaikan lebar panah */
+    border-left: 0;
+    left: -10px; /* Mengurangi jarak panah dari garis */
+  }
+
+  .education h1 {
+    text-align: center;
+    font-size: 1.5em; /* Menyesuaikan ukuran font */
+    margin: 30px; /* Mengurangi margin */
+    margin-top: -50px; /* Menyesuaikan margin atas */
+    margin-bottom: -30px; /* Menyesuaikan margin bawah */
+  }
+
+  .custom-hr {
+    border: none;
+    height: 2px; /* Mengurangi tinggi garis */
+    background: transparent;
+    opacity: 1;
+    margin: 30px; /* Mengurangi margin */
+    margin-bottom: -30px; /* Menyesuaikan margin bawah */
+    margin-top: 30px; /* Menyesuaikan margin atas */
   }
 }
 

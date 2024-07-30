@@ -28,7 +28,6 @@
     <!-- slides mobile css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-    <script src="script.js" defer></script>
   </head>
   <body id="Home">
     <!-- ========================================================================================================== -->
@@ -671,30 +670,6 @@
       });
     </script>
 
-    <!--============================================ Share To spreedsheet ========================================-->
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyguS_1K7zjD_LDOwAarAgjZm1DCfP8YWVl7VVjW6Nb7IVKoKdUUH_S7a01MYJqVnFwyw/exec";
-      const form = document.forms["nico-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            myAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-
     <!--================================================ Typing text  ===========================================-->
     <script>
       document.addEventListener("DOMContentLoaded", (event) => {
@@ -748,5 +723,6 @@
         window.scrollTo(0, 0); // Atur posisi scroll ke atas saat halaman dimuat ulang
       };
     </script>
+    "
   </body>
 </html>
