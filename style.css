@@ -108,17 +108,23 @@ body {
 }
 
 /* Contact button */
-.btn-contact {
-  display: inline-flex;
-  align-items: center;
-  background-color: #ffbb00;
-  color: black;
-  padding: 10px 20px;
-  font-size: 16px;
+.btn-contact,
+.btn-email {
+  display: inline-block;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Ensure buttons are centered */
+}
+
+.btn-contact {
+  background-color: #ffbb00;
+  color: black;
+  padding: 10px 20px;
 }
 
 .btn-contact i {
@@ -132,6 +138,21 @@ body {
 
 .btn-contact:hover i {
   animation: ring 6s infinite;
+}
+
+.btn-email {
+  background-color: rgba(10, 94, 80, 1);
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-email i {
+  margin-right: 10px;
+}
+
+.btn-email:hover {
+  color: #f1f1f1;
+  background-color: rgba(10, 94, 80, 1);
 }
 
 @keyframes ring {
@@ -204,28 +225,6 @@ body {
   43% {
     transform: rotate(0deg);
   }
-}
-
-/* Btn email */
-.btn-email {
-  display: inline-flex;
-  align-items: center;
-  background-color: rgba(10, 94, 80, 1);
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-email i {
-  margin-right: 10px;
-}
-
-.btn-email:hover {
-  color: #f1f1f1;
-  background-color: rgba(10, 94, 80, 1);
 }
 
 /* Social icon */
@@ -328,142 +327,120 @@ section {
 .container h2 {
   font-weight: 900;
 }
-/* Contoh CSS untuk menghindari elemen melebihi viewport */
-.container,
-.row {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.container h2 {
-  font-weight: 900;
-}
-
-/* =====================================================Responsive Media Query======================================= */
-@media (max-width: 576px) {
-  /* Navbar */
-  .navbar {
-    padding: 0.5rem 0; /* Mengurangi padding navbar */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    padding: 10px;
+    text-align: center;
   }
 
-  .navbar-brand {
-    font-size: 1rem; /* Menyesuaikan ukuran font brand */
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .jumbotron .container {
+    margin-left: 0; /* Menghilangkan margin kiri pada layar kecil */
+    flex-direction: column;
+    align-items: center; /* Align items to the center on small screens */
+  }
+
+  .jumbotron img {
+    width: 250px; /* Perbesar ukuran gambar */
+  }
+
+  .jumbotron .display-4 {
+    font-size: 1.5rem;
+  }
+
+  .jumbotron .lead {
+    font-size: 1rem;
+  }
+
+  .scroll-down .btn {
+    font-size: 1rem;
+  }
+
+  .btn-contact,
+  .btn-email {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    background-position: top center;
+  }
+
+  .jumbotron .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-contact,
+  .btn-email {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    width: 100%; /* Ensure buttons take up full width on small screens */
+  }
+
+  .jumbotron img {
+    width: 200px; /* Perbesar ukuran gambar */
+  }
+
+  .jumbotron .display-4 {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron .lead {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #typing-text {
+    text-align: center;
+    font-size: 2rem; /* Kecilkan ukuran font typing text */
+  }
+}
+
+/* Adjustments for Landscape Mode */
+@media (max-width: 576px) and (orientation: landscape) {
+  .navbar .nav-link {
+    padding: 5px;
+    font-size: 0.8rem;
   }
 
   .navbar-brand img {
-    width: 30px; /* Mengurangi ukuran logo */
+    width: 30px;
     height: 30px;
   }
 
-  .navbar-toggler {
-    font-size: 1.2rem; /* Mengurangi ukuran ikon toggle */
-    color: #fff; /* Warna ikon toggle */
-  }
-
-  .navbar-toggler:focus {
-    outline: none; /* Menghapus outline saat fokus */
-    box-shadow: none; /* Menghapus shadow saat fokus */
-  }
-
-  .navbar .nav-link {
-    font-size: 0.9rem; /* Menyesuaikan ukuran font link navigasi */
-    padding: 0.5rem 0; /* Menyesuaikan padding link */
-  }
-
-  .navbar .nav-link.active {
-    color: #ffbb00; /* Menyesuaikan warna link aktif */
-  }
-
-  .navbar .nav-link:hover {
-    color: #ffbb00; /* Menyesuaikan warna link saat hover */
-  }
-
-  .navbar-collapse {
-    background-color: rgba(10, 94, 80, 0.884); /* Menyesuaikan warna latar belakang menu */
-  }
-
-  .navbar-collapse .navbar-nav {
-    margin-top: 1rem; /* Menyesuaikan jarak atas item menu */
-  }
-
-  .navbar-collapse .nav-item {
-    margin-bottom: 0.5rem; /* Menyesuaikan jarak bawah item menu */
-  }
-  /* Jumbotron */
-  .jumbotron {
-    padding-top: 100px; /* Mengurangi padding atas */
-    background: #e8eae1;
-  }
-
   .jumbotron .container {
-    margin-left: 10px; /* Mengurangi margin kiri */
+    margin-left: 0;
     flex-direction: column;
     align-items: center;
   }
 
-  .jumbotron .text-content {
-    text-align: center;
-    margin-left: 0;
+  .jumbotron img {
+    width: 150px; /* Perbesar ukuran gambar */
+  }
+
+  .jumbotron .display-4 {
+    font-size: 1rem;
+  }
+
+  .jumbotron .lead {
+    font-size: 0.8rem;
+  }
+
+  .btn-contact,
+  .btn-email {
+    font-size: 0.7rem;
+    padding: 4px 8px;
   }
 
   #typing-text {
-    font-size: 24px; /* Menyesuaikan ukuran font teks */
-  }
-
-  .lead {
-    font-size: 14px; /* Menyesuaikan ukuran font teks */
-  }
-
-  .social-icons a {
-    font-size: 24px; /* Menyesuaikan ukuran ikon sosial */
-  }
-
-  .scroll-down .btn {
-    font-size: 12px; /* Menyesuaikan ukuran font tombol scroll */
-  }
-
-  .jumbotron img {
-    max-width: 80%; /* Mengatur lebar maksimum gambar */
-    margin-bottom: -20px;
-    height: auto;
-    max-height: 200px; /* Menyesuaikan tinggi gambar */
-  }
-}
-
-@media (max-width: 768px) {
-  .jumbotron .container {
-    margin-left: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .jumbotron .text-content {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  #typing-text {
-    font-size: 30px;
-  }
-
-  .lead {
-    font-size: 16px;
-  }
-
-  .social-icons a {
-    font-size: 30px;
-  }
-
-  .scroll-down .btn {
-    align-items: center;
-    font-size: 14px;
-  }
-
-  .jumbotron img {
-    max-width: 50%;
-    margin-bottom: -40px;
-    height: auto;
-    max-height: 250px;
+    font-size: 0.8rem; /* Kecilkan ukuran font typing text */
   }
 }
 
