@@ -31,6 +31,17 @@
   </head>
   <body id="Home">
     <!-- ========================================================================================================== -->
+    <!-- ========================================= Hero Section =================================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="hero-section" id="hero-section">
+      <div>
+        <h1 class="welcome">Selamat Datang di Web Saya!</h1>
+        <p class="description">Jelajahi berbagai informasi dan proyek menarik tentang saya.</p>
+        <button class="scroll-up-btn" onclick="scrollUp()">Scroll Up <i class="bi bi-arrow-up"></i></button>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
     <!-- ============================================= Navbar ===================================================== -->
     <!-- ========================================================================================================== -->
     <nav class="navbar navbar-expand-lg bg-opacity-75 shadow-sm fixed-top" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
@@ -571,7 +582,7 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>copyright &copy;2024 codeOpacity. designed by <span>Nico Nainggolan</span></p>
+        <p>copyright &copy;2024. Designed by <span>Nico Nainggolan</span></p>
       </div>
     </footer>
 
@@ -723,6 +734,10 @@
         window.scrollTo(0, 0); // Atur posisi scroll ke atas saat halaman dimuat ulang
       };
     </script>
-    "
+    <script>
+      function scrollUp() {
+        document.getElementById("hero-section").classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
