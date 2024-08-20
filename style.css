@@ -550,9 +550,9 @@ section {
 .about {
   margin-top: -20px;
   font-family: "Poppins", sans-serif;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -566,7 +566,6 @@ section {
 }
 
 .heading span {
-  font-family: "Poppins", sans-serif;
   color: #ffbb00;
 }
 
@@ -576,10 +575,10 @@ section {
 }
 
 .subheading {
-  padding-top: 40px;
+  padding-top: 10px;
   color: #797877;
   font-size: 20px;
-  margin-bottom: -20px;
+  margin-bottom: -50px;
 }
 
 .about-img {
@@ -591,7 +590,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: -10px;
 }
 
 .about-img img {
@@ -639,32 +638,15 @@ section {
   padding: 20px;
 }
 
-.dcard-container {
+.btn-box-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.dcard {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dcard img {
-  max-width: 100%;
-  max-height: 100%;
+  gap: 1rem; /* Menyesuaikan jarak antara kedua tombol */
+  margin-top: -20px; /* Atur sesuai kebutuhan */
 }
 
 .btn-box {
-  margin-top: -20px;
+  margin: 0; /* Menghapus margin yang tidak perlu */
 }
 
 .btna {
@@ -723,6 +705,77 @@ section {
 
 .btn-box a:nth-child(1):hover {
   background-color: rgba(10, 94, 80, 1);
+}
+
+.modalby {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+  padding-top: 60px;
+}
+
+.modal-contentby {
+  background-color: #e8eae1;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Slightly wider */
+  text-align: center;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hobby-list {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  text-align: center;
+}
+
+.hobby-list li {
+  font-size: 1.2rem;
+  margin-left: 30px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hobby-list li i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: rgba(10, 94, 80, 1);
 }
 
 /* ================================================ Education ===============================================*/
@@ -1272,9 +1325,18 @@ label:hover {
 /* ================================================== PROJECT ==================================================== */
 /* =============================================================================================================== */
 #projects {
-  background-color: rgba(10, 94, 80, 0.884); /* Warna hijau yang enak dilihat */
+  background-image: url("img/bg1.jpg"); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Memastikan gambar menutupi seluruh area */
+  background-attachment: fixed; /* Gambar tetap saat scroll */
+  background-position: center; /* Menjaga gambar tetap di tengah */
+  background-color: rgba(10, 94, 80, 0.884); /* Warna hijau dengan transparansi */
   color: white;
-  padding-bottom: 60px;
+}
+
+#projects .container {
+  margin-top: -80px;
+  padding: 40px 20px;
+  background-color: rgba(10, 94, 80, 0.7); /* Overlay hijau dengan transparansi */
 }
 
 #projects h2 {

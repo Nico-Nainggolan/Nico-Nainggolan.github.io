@@ -130,11 +130,31 @@
           spanduk, logo, flayer, poster dan banyak lagi. Software yang paling sering saya pakai Photoshop, Canva, CorelDraw. Saya juga minat dalam dalam hal editing video menggunakan software capcut.
         </p>
 
-        <div class="btn-box btns">
-          <a href="./img/Nico CV.pdf" download target="_blank" class="btna" data-aos="flip-up" data-aos-duration="2000">download cv <i class="bi bi-download"></i></a>
+        <div class="btn-box-container">
+          <div class="btn-box">
+            <a href="./img/Nico CV.pdf" download target="_blank" class="btna" data-aos="flip-up" data-aos-duration="2000">download cv <i class="bi bi-download"></i></a>
+          </div>
+          <div class="btn-box">
+            <a class="btna" data-aos="flip-up" data-aos-duration="2000" id="openModalBtn">Hobbies <i class="fas fa-heart"></i></a>
+          </div>
         </div>
       </div>
     </section>
+
+    <div id="hobbyModal" class="modalby">
+      <div class="modal-contentby">
+        <span class="close">&times;</span>
+        <h2>Hobbies</h2>
+        <ul class="hobby-list">
+          <li><i class="fas fa-dumbbell"></i><span>Workout/Gym</span></li>
+          <li><i class="fas fa-palette"></i>Desain grafis</li>
+          <li><i class="fa-solid fa-music"></i><span>Bernyanyi</span></li>
+          <li><i class="fas fa-film"></i>Editing video</li>
+          <li><i class="fas fa-camera"></i><span>Fotografi</span></li>
+          <li><i class="fa-solid fa-book-open-reader"></i>Membaca buku</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- ========================================================================================================== -->
     <!-- ============================================= Education ================================================== -->
@@ -718,6 +738,28 @@
       function scrollUp() {
         document.getElementById("hero-section").classList.add("hidden");
       }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("hobbyModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      });
     </script>
   </body>
 </html>
