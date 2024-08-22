@@ -356,6 +356,7 @@ body {
   color: rgba(10, 94, 80, 1);
   font-size: 15px;
   padding: 5px 5px;
+  transition: transform 0.3s ease; /* Atur durasi dan transisi */
 }
 
 .scroll-down .btn i {
@@ -363,9 +364,7 @@ body {
 }
 
 .scroll-down .btn:hover {
-  border: none;
-  margin-top: 5px;
-  transition: 2s;
+  transform: scale(1.1); /* Membuat efek zoom */
 }
 
 @keyframes bounce {
